@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/_reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>e-Ticket</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="Logo e-tricket.png" alt="Logo">
+    </header>
+    <main class="container">
+
+        <div class="grafismo"></div>
+        <h1>Compre seu <span>ingresso</span></h1>
+        <form action="">
+            <label class="input-group">
+                Escolha o tipo
+                <select name="tipo-ingresso" id="tipo-ingresso">
+                    <option value="inferior">Cadeira inferior</option>
+                    <option value="superior">Cadeira superior</option>
+                    <option value="pista">Pista</option>
+                </select>
+            </label>
+            <label class="input-group">Qtde.
+                <input type="number" id="qtd" placeholder="00" min="1" max="10">
+            </label>
+            <button onclick="comprar()" type="button">Comprar</button>
+        </form>
+        <img class="hachuras" src="Hachuras.svg" alt="">
+        <section>
+            <h2>Quantidade disponível</h2>
+
+            <ul class="lista">
+                <li>Pista<span id="qtd-pista">100</span></li>
+                <li>Cadeira superior<span id="qtd-superior">200</span></li>
+                <li>Cadeira inferior<span id="qtd-inferior">400</span></li>
+                
+            </ul>
+            <img src="Ingresso.svg" alt="">
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
